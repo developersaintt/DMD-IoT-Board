@@ -27,10 +27,12 @@ Node MCU is used for receiving data/string wirelessly. DMD is for displaying tex
 ![Image of DMD interfaced with arduino](circuit_diagram.jpeg)
 ## Interface:
 With this interface which you can simply send a text string to the node mcu to display on the dmd. You just need to enter a string (100 characters)  in the text box displayed below, hit enter and this text will be received by ESP8266 and it will then transmit it serially to arduino. Arduino will then display it on the dmd.
-<img src="blynk.png" height="700">
+
+<img src="blynk.png" height="700" align="center">
 
 ## Flowchart:
 Whenever one rotation of the text is completed the Arduino checks if it has received a new string to be displayed. If new string is received via ESP8266, it displays new string. If not, it again sets older string to display.
+
 <img src="flowchart.jpeg" height="800">
 
 ## Analysis:
@@ -42,3 +44,6 @@ https://www.instructables.com/id/Display-Text-at-P10-LED-Display-Using-Arduino/
 https://www.instructables.com/id/How-to-Use-an-P10-Module-With-Arduino/
 
 http://forum.freetronics.com/viewtopic.php?t=6396
+
+## Working Video
+working video is attached....
