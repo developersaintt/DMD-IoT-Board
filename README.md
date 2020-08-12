@@ -27,11 +27,11 @@ Node MCU is used for receiving data/string wirelessly. DMD is for displaying tex
 ![Image of DMD interfaced with arduino](circuit_diagram.jpeg)
 ## Interface:
 With this interface which you can simply send a text string to the node mcu to display on the dmd. You just need to enter a string (100 characters)  in the text box displayed below, hit enter and this text will be received by ESP8266 and it will then transmit it serially to arduino. Arduino will then display it on the dmd.
- ![Image of BLYNK APP](blynk.png)
+<img src="blynk.png" height="700">
 
 ## Flowchart:
 Whenever one rotation of the text is completed the Arduino checks if it has received a new string to be displayed. If new string is received via ESP8266, it displays new string. If not, it again sets older string to display.
-![Image of Flowchart](flowchart.jpeg)
+<img src="flowchart.jpeg" height="800">
 
 ## Analysis:
 The above explained model of this project works perfectly fine. The only constraint of this project is that it needs a constantly working internet connection, but this is the only way you can control this via internet. If you want to change that to as a Wi-Fi server, you can only access it by connecting to same server. This more limits the user to be at the same network. This way the versatility of this project shrinks. The future work might contain accessing multiple display boards via a single interface or app. 
